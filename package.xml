@@ -8,6 +8,9 @@
   <license>GPL-3.0-only</license>
 
   <depend>easynav_gridmap_maps_builder</depend>
+  <depend>easynav_octomap_maps_builder</depend>
+  <depend>easynav_pointcloud_maps_builder</depend>
+  <depend>easynav_common</depend>
 
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>
