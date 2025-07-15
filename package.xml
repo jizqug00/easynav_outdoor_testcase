@@ -7,12 +7,14 @@
   <maintainer email="e.aguado.glez@gmail.com">Esther Aguado Gonzalez</maintainer>
   <license>GPL-3.0-only</license>
 
-  <depend>easynav_gridmap_maps_builder</depend>
-  <depend>easynav_octomap_maps_builder</depend>
-  <depend>easynav_pointcloud_maps_builder</depend>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
   <depend>easynav_common</depend>
 
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>
 
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
 </package>
