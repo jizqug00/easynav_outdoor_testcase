@@ -8,7 +8,7 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 find_package(ament_cmake REQUIRED)
 find_package(easynav_common REQUIRED)
 
-install(DIRECTORY robots_params maps
+install(DIRECTORY launch robots_params maps
   DESTINATION share/${PROJECT_NAME}
 )
 
