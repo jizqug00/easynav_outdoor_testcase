@@ -3,9 +3,6 @@ project(easynav_outdoor_testcase)
 
 find_package(ament_cmake REQUIRED)
 
-install(DIRECTORY robots_params/
-  DESTINATION share/${PROJECT_NAME}/robots_params
-)
+install(DIRECTORY maps robots_params DESTINATION share/${PROJECT_NAME})
 
 ament_package()
-
