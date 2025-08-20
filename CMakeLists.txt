@@ -1,8 +1,15 @@
 cmake_minimum_required(VERSION 3.20)
 project(easynav_outdoor_testcase)
 
-find_package(ament_cmake REQUIRED)
+set(CMAKE_CXX_STANDARD 23)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
 
-install(DIRECTORY maps robots_params DESTINATION share/${PROJECT_NAME})
+find_package(ament_cmake REQUIRED)
+find_package(easynav_common REQUIRED)
+
+install(DIRECTORY launch robots_params maps
+  DESTINATION share/${PROJECT_NAME}
+)
 
 ament_package()

@@ -1,11 +1,10 @@
 pointcloud_maps_builder_node:
   ros__parameters:
-    sensor_topic: "/map"
-    downsample_resolution: 1.0
-    perception_default_frame: "map"
-
-gridmap_maps_builder_node:
-  ros__parameters:
-    sensor_topic: "/map"
-    downsample_resolution: 1.0
-    perception_default_frame: "map"
+    use_sim_time: true
+    sensors: [map]
+    downsample_resolution: 0.1
+    perception_default_frame: map
+    map:
+      topic: map
+      type: sensor_msgs/msg/PointCloud2
+      group: points
