@@ -16,7 +16,7 @@ localizer_node:
     localizer_types: [lidarslam]
     lidarslam:
       plugin: easynav_lidarslam_localizer/LidarSlamLocalizer
-      input_cloud: /front_laser_sensor/points
+      input_cloud: /front_laser/points
       imu: /imu/data
 
 maps_manager_node:
@@ -44,8 +44,8 @@ sensors_node:
     sensors: [laser1]
     perception_default_frame: odom
     laser1:
-      topic: /scan_raw
-      type: sensor_msgs/msg/LaserScan
+      topic: /front_laser_sensor/points
+      type: sensor_msgs/msg/PointCloud2
       group: points
 
 system_node:
