@@ -1,0 +1,7 @@
+layers:
+  - name: elevation
+    min: -4.70630074
+    max: 15.4641399
+resolution: 1
+length: [169, 192]
+position: [-4.1861953735351562, 5.241546630859375]
