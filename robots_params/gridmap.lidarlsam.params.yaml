@@ -27,7 +27,7 @@ maps_manager_node:
       freq: 10.0
       plugin: easynav_gridmap_maps_manager/GridmapMapsManager
       package: easynav_outdoor_testcase
-      map_path_file: maps/mic_map.yaml
+      map_path_file: maps/urjc_map.yaml
 
 planner_node:
   ros__parameters:
