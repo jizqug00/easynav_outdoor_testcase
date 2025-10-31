@@ -22,12 +22,12 @@ localizer_node:
 maps_manager_node:
   ros__parameters:
     use_sim_time: true
-    map_types: [bonxai, navmap]
-    bonxai:
-      freq: 10.0
-      plugin: easynav_bonxai_maps_manager/BonxaiMapsManager
-      package: easynav_outdoor_testcase
-      bonxai_path_file: maps/urjc_map.pcd
+    map_types: [navmap]
+    # bonxai:
+    #   freq: 10.0
+    #   plugin: easynav_bonxai_maps_manager/BonxaiMapsManager
+    #   package: easynav_outdoor_testcase
+    #   bonxai_path_file: maps/urjc_map.pcd
     navmap:
       freq: 10.0
       plugin: easynav_navmap_maps_manager/NavMapMapsManager
@@ -41,6 +41,7 @@ planner_node:
     astar:
       plugin: easynav_navmap_planner/AStarPlanner
       max_allowed_slope_deg: 20.0
+      layer: elevation
 
 sensors_node:
   ros__parameters:
